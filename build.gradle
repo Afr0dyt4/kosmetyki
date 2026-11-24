@@ -31,8 +31,6 @@ processResources {
     filesMatching("fabric.mod.json") { expand "version": project.version }
 }
 
-tasks.withType(JavaCompile).configureEach { it.options.release = 21 }
-35  java {
-37      sourceCompatibility = JavaVersion.VERSION_21
-38      targetCompatibility = JavaVersion.VERSION_21
-39  }
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+}
