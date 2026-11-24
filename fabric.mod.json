@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "kosmetyki",
+  "version": "${version}",
+  "name": "Kosmetyki",
+  "description": "Menu kosmetyk: skrzydla, peleryny, helmy i wiecej. Klawisz K.",
+  "authors": ["Ty"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["pl.kosmetyki.KosmetykiMod"] },
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.4", "java": ">=21", "fabric-api": "*" }
+}
