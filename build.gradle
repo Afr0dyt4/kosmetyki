@@ -6,7 +6,18 @@ version = project.mod_version
 group = project.maven_group
 base { archivesName = project.archives_base_name }
 
-repositories {}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['.']
+            exclude 'build/**', '.gradle/**'
+        }
+        resources {
+            srcDirs = ['.']
+            include 'fabric.mod.json'
+        }
+    }
+}
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
